@@ -1,0 +1,166 @@
+:root {
+    --primary-color: #b4dfee; /* Azul cielo */
+    --text-color: #000000;
+    --font-script: 'Dancing Script', cursive;
+    --font-body: 'Roboto', sans-serif;
+    --background-color: #ffffff;
+    --spacing-small: 0.5rem;
+    --spacing-medium: 1rem;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    font-family: var(--font-body);
+    background-color: var(--background-color);
+    color: var(--text-color);
+  }
+  
+  .banner {
+    width: 100%;
+    height: 100vh;
+    background: url('img/banner.jpeg') center center no-repeat;
+    background-size: contain;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .intro-text {
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+  
+  .intro-text p {
+    margin-bottom: var(--spacing-small);
+    font-size: 1.1rem;
+  }
+  
+  .intro-text h2 {
+    color: var(--primary-color);
+    font-size: 2rem;
+    margin-top: var(--spacing-medium);
+    margin-bottom: var(--spacing-small);
+  }
+  
+  .intro-text h1 {
+    color: var(--primary-color);
+    font-family: var(--font-script);
+    font-size: 5rem;
+    margin-top: var(--spacing-small);
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .banner {
+      height: 100vh;
+    }
+  
+    .intro-text h1 {
+      font-size: 4rem;
+      font-family: "Charmonman", cursive;;
+    }
+  
+    .intro-text h2 {
+      font-size: 1.6rem;
+    }
+  
+    .intro-text p {
+      font-size: 1rem;
+    }
+  }
+
+
+ /* Sección general */
+.fecha-section {
+    text-align: center;
+    background-color: #fff;
+    margin-bottom: 50px;
+  }
+  
+  /* Imagen que abarca toda la pantalla */
+  .fecha-imagen {
+    width: 100%;
+    height: 100vh;
+    background: url('img/abril.jpeg') center center no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: #fff;
+  }
+  
+  /* Texto horizontal de la fecha */
+  .fecha-horizontal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: nowrap;
+    margin-top: 1.5rem;
+  }
+  
+  .fecha-horizontal .dia,
+  .fecha-horizontal .mes {
+    font-family: var(--font-body);
+    font-size: 1.2rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 0.5rem;
+    line-height: 1.2;
+  }
+  
+  /* Subrayado arriba y abajo */
+  .fecha-horizontal .dia::before,
+  .fecha-horizontal .dia::after,
+  .fecha-horizontal .mes::before,
+  .fecha-horizontal .mes::after {
+    content: "";
+    display: block;
+    height: 2px;
+    background-color: var(--primary-color);
+    width: 80%;
+    margin: 4px 0;
+  }
+  
+  /* Número grande */
+  .fecha-horizontal .numero {
+    color: var(--primary-color);
+    font-size: 4rem;
+    font-weight: bold;
+    line-height: 1;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .fecha-imagen {
+      height: 60vh;
+      background-size: cover;
+    }
+  
+    .fecha-horizontal {
+      gap: 1rem;
+    }
+  
+    .fecha-horizontal .numero {
+      font-size: 3rem;
+    }
+  
+    .fecha-horizontal .dia,
+    .fecha-horizontal .mes {
+      font-size: 1rem;
+    }
+  
+    .fecha-horizontal .dia::before,
+    .fecha-horizontal .dia::after,
+    .fecha-horizontal .mes::before,
+    .fecha-horizontal .mes::after {
+      width: 60%;
+    }
+  }
+  
