@@ -32,16 +32,20 @@
   }
   
   .intro-text {
+    font-family: 'Roboto', sans-serif;;
     padding: 2rem 1rem;
     text-align: center;
   }
   
+  
   .intro-text p {
+    font-family: 'Roboto', sans-serif;;
     margin-bottom: var(--spacing-small);
     font-size: 1.1rem;
   }
   
   .intro-text h2 {
+    font-family: 'Roboto', sans-serif;;
     color: var(--primary-color);
     font-size: 2rem;
     margin-top: var(--spacing-medium);
@@ -79,8 +83,8 @@
  /* Sección general */
 .fecha-section {
     text-align: center;
-    background-color: #fff;
-    margin-bottom: 50px;
+    background-color: #f9f9f9;;
+    margin-bottom: 0px;
   }
   
   /* Imagen que abarca toda la pantalla */
@@ -233,7 +237,7 @@
   /* Ceremonia */
   .ceremonia-section {
     padding: 3rem 1rem;
-    background-color: #fff;
+    background-color: #f9f9f9;
     text-align: center;
   }
   
@@ -290,7 +294,7 @@
   }
   
   .vestimenta-imagen {
-    margin: 2rem 0;
+    margin: 1rem 0;
   }
   
   .vestimenta-imagen-central {
@@ -312,9 +316,7 @@
     }
   }
   
-  
 
-  
   /* Regalos */
   .regalos-section {
     background-color: #f9f9f9;
@@ -388,38 +390,6 @@
 }
   
 
-/* Pases */
-.pase-personalizado-section {
-  background-color: #fefefe;
-  padding: 3rem 1rem;
-  text-align: center;
-}
-
-.pase-contenido {
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-.pase-nombre {
-  font-size: 1.5rem;
-  color: var(--primary-color);
-  font-weight: bold;
-  margin-bottom: 0.5rem;
-}
-
-.pase-tipo {
-  font-size: 1.2rem;
-  color: #333;
-}
-
-.pase-nota {
-  font-size: 0.95rem;
-  color: #777;
-  margin-top: 1rem;
-}
-
-
-
 /* Asistencia */
 .confirmacion-asistencia-section {
   background-color: #fdfdfd;
@@ -469,7 +439,7 @@
   border: 1px solid #ccc;
   border-radius: 5px;
   font-size: 1rem;
-  color: #333;
+  
 }
 
 .form-group textarea {
@@ -477,14 +447,14 @@
 }
 
 .btn-confirmar {
-  padding: 1rem;
+  display: inline-block;
   background-color: var(--primary-color);
-  color: #fff;
-  border: none;
+  color: white;
+  padding: 0.7rem 1.5rem;
   border-radius: 5px;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: background-color 0.3s;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
 }
 
 .btn-confirmar:hover {
@@ -504,10 +474,75 @@
   }
 
   .btn-confirmar {
-    padding: 1rem 0;
-    font-size: 1.2rem;
+      width: 100%;
+      font-size: 1rem;
+      padding: 0.8rem;
+    }
+  }
+
+
+/* Agradecimientos */
+.agradecimiento-final-section {
+  background-color: #f8fbfc;
+  padding: 3rem 1rem;
+  text-align: center;
+  border-top: 1px solid #e0e0e0;
+}
+
+.agradecimiento-final-contenido {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.agradecimiento-mensaje {
+  font-size: 1.2rem;
+  color: #444;
+  margin-bottom: 1rem;
+}
+
+.agradecimiento-mensaje.fuerte {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+/* Imagen al final de la sección de agradecimientos */
+.agradecimiento-final-imagen {
+  width: 100%;
+  max-width: 400px; /* Limitar el tamaño máximo de la imagen */
+  margin-top: 2rem; /* Espacio superior entre el mensaje y la imagen */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 8px;
+  object-fit: cover; /* Asegura que la imagen mantenga proporciones sin distorsión */
+}
+
+/* Imagen adicional que aparece debajo de la primera imagen */
+.agradecimiento-final-imagen-secundaria {
+  width: 100%;
+  max-width: 400px; /* Limitar el tamaño máximo de la imagen para que tenga el mismo tamaño que la primera */
+  height: 50vh; /* Asegura que esta imagen ocupe el 50% de la altura de la pantalla */
+  object-fit: cover;
+  display: block;
+  margin-top: 1rem; /* Espacio superior entre la imagen 1 y la imagen 2 */
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 8px; /* Bordes redondeados para la segunda imagen */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .agradecimiento-final-imagen {
+    max-width: 80%; /* Reducir el tamaño de la imagen en pantallas pequeñas */
+  }
+
+  .agradecimiento-final-imagen-secundaria {
+    max-width: 80%; /* Reducir el tamaño de la segunda imagen para pantallas pequeñas */
+    height: 40vh; /* Ajustamos la altura de la segunda imagen para pantallas pequeñas */
   }
 }
 
-  
-  
+
+    
+    
