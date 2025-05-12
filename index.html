@@ -48,9 +48,210 @@
       </div>
     </div>
   </section>
-  
-  
-  
+
+<!-- Sección de Agradecimiento -->
+<section class="agradecimiento-section" data-aos="fade-up">
+  <div class="container agradecimiento-contenido">
+    <div class="agradecimiento-card">
+      <div class="agradecimiento-texto">
+        <p>Con el agradecimiento y la bendición de Dios, celebremos en compañía de:</p>
+        <h4>Mis padres:</h4>
+        <p>Alejandro Hernández Aranda</p>
+        <p>&</p>
+        <p>Karla Carolina Trujillo Cruz</p>
+
+        <h4>Mis padrinos:</h4>
+        <p>Antonio Guadalupe Trujillo Cabrera</p>
+        <p>&</p>
+        <p>María Angélica Cruz González</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- Imagen centrada -->
+  <section id="imagen-centrada">
+    <img src="img/plantilla.jpg" alt="Invitación de XV Años">
+  </section>
+
+<!-- Sección de la Ceremonia -->
+<section class="ceremonia-section" data-aos="fade-up">
+  <div class="container">
+    <div class="ceremonia-contenido">
+      <h2 class="titulo-seccion">Ceremonia</h2>
+      <p class="ceremonia-lugar">Parroquia del Señor del Campo Florido</p>
+      <p class="ceremonia-hora">Hora: 17:00 PM</p>
+      <p class="ceremonia-direccion">
+        Dirección: Paseo de la Florida s/n, La Florida, Naucalpan de Juárez, Edo. México.
+      </p>
+      <a 
+        href="https://www.google.com/maps/place/Parroquia+del+Se%C3%B1or+del+Campo+Florido/@19.4981098,-99.2339283,17z/data=!3m1!4b1!4m6!3m5!1s0x85d202e08a1d7953:0x3878253567970dca!8m2!3d19.4981098!4d-99.2313534!16s%2Fg%2F11b6x5g91k?entry=ttu"
+        target="_blank"
+        class="btn-mapa"
+      >
+        Ver en Google Maps
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<!-- Sección Salón -->
+<section class="ceremonia-section" data-aos="fade-up">
+  <div class="container">
+    <div class="ceremonia-contenido">
+      <h2 class="titulo-seccion">Recepción</h2>
+      <p class="ceremonia-lugar">Salón Villa María</p>
+      <p class="ceremonia-hora">Hora: 18:00 PM</p>
+      <p class="ceremonia-direccion">
+        Dirección: Nubia #180, Col. El Recreo, 02070 Azcapotzalco, CDMX.
+      </p>
+      <a href="https://www.google.com/maps/place/Sal%C3%B3n+de+Fiestas+Villa+Mar%C3%ADa/@19.471176,-99.182828,17z/data=!3m1!4b1!4m6!3m5!1s0x85d1f2b3b3b3b3b3:0x3b3b3b3b3b3b3b3b!8m2!3d19.471176!4d-99.182828!16s%2Fg%2F11b6x5g91k?entry=ttu" target="_blank" class="btn-mapa">
+        Ver en Google Maps
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Sección Código de Vestimenta -->
+<section class="vestimenta-section" data-aos="fade-up">
+  <div class="container vestimenta-contenido">
+    <h2 class="titulo-seccion">Código de Vestimenta</h2>
+    <div class="vestimenta-imagen">
+      <img src="img/vestimenta.jpg" alt="Código de Vestimenta Formal" class="vestimenta-imagen-central">
+    </div>
+    <p class="vestimenta-texto">
+      Vestimenta formal.
+    </p>
+    <p class="vestimenta-texto">
+      Evita tono azul claro
+    </p>
+  </div>
+</section>
+
+
+<!-- Sección Mesa de Regalos -->
+<section class="regalos-section" data-aos="fade-up">
+  <div class="container regalos-contenido">
+    <h2 class="titulo-seccion">Mesa de Regalos</h2>
+    <div class="regalos-icono">
+      <i class="fas fa-gift"></i>
+    </div>
+    <p class="regalos-texto">
+      Tu presencia es lo más importante para mí, pero si deseas tener algún detalle, aquí encontrarás mi mesa de regalos:
+    </p>
+    <p class="regalos-texto">
+    No. de evento: 51680214
+    </p>
+    <a href="https://mesaderegalos.liverpool.com.mx/milistaderegalos/51680214" target="_blank" class="btn-regalo">
+      Ver en Liverpool
+    </a>
+  </div>
+</section>
+
+
+<!-- Sección Pase Personalizado -->
+<section class="pase-personalizado-section" data-aos="fade-up">
+  <div class="container pase-contenido">
+    <h2 class="titulo-seccion">Pase invitación</h2>
+    <p id="nombreInvitado" class="pase-nombre"></p>
+    <p id="tipoPase" class="pase-tipo"></p>
+    <p class="pase-nota">Tenemos reservado para ti un lugar</p>
+  </div>
+</section>
+
+
+
+
+<!-- Sección Confirmar Asistencia -->
+<section class="confirmacion-asistencia-section" data-aos="fade-up">
+  <div class="container confirmacion-contenido">
+    <h2 class="titulo-seccion">Confirmar Asistencia</h2>
+    <p class="confirmacion-texto">Por favor, confirma tu asistencia para hacer de este día algo aún más especial.</p>
+
+
+    <!-- Botón para mostrar formulario -->
+    <button class="btn-regalo" id="mostrarFormulario">Confirmar</button>
+
+    <!-- Formulario oculto -->
+    <form id="formularioAsistencia" class="confirmacion-form oculto">
+      <div class="form-group">
+        <label for="nombre">Nombre Completo</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required>
+      </div>
+
+      <div class="form-group">
+        <label for="asistencia">¿Asistirás?</label>
+        <select id="asistencia" name="asistencia" required>
+          <option value="" disabled selected>Elige una opción</option>
+          <option value="Sí asistiré">Sí</option>
+          <option value="No podré asistir">No</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="comentarios">Comentarios (opcional)</label>
+        <textarea id="comentarios" name="comentarios" rows="3" placeholder="¿Tienes algún mensaje?"></textarea>
+      </div>
+
+      <!-- Botón que arma el mensaje y redirige a WhatsApp -->
+      <button type="submit" class="btn-regalo">Enviar por WhatsApp</button>
+    </form>
+  </div>
+</section>
+
+<script>
+  // Mostrar el formulario al hacer clic en el botón
+  document.getElementById('mostrarFormulario').addEventListener('click', function () {
+    document.getElementById('formularioAsistencia').classList.remove('oculto');
+    this.style.display = 'none'; // Oculta el botón
+  });
+
+  // Capturar el envío del formulario
+  document.getElementById('formularioAsistencia').addEventListener('submit', function (e) {
+    e.preventDefault(); // Evita que recargue la página
+
+    const nombre = document.getElementById('nombre').value.trim();
+    const asistencia = document.getElementById('asistencia').value;
+    const comentarios = document.getElementById('comentarios').value.trim();
+
+    const mensaje = `¡Hola! Confirmo mi asistencia a los XV años.\nNombre: ${nombre}\nAsistencia: ${asistencia}${comentarios ? `\nComentarios: ${comentarios}` : ''}`;
+
+    const telefono = "525554056604"; // Reemplaza por tu número en formato internacional
+
+    const url = `https://wa.me/${telefono}?text=${encodeURIComponent(mensaje)}`;
+    window.open(url, '_blank');
+  });
+</script>
+
+ <!-- ´Pases -->
+<script>
+  const params = new URLSearchParams(window.location.search);
+  const nombre = params.get('nombre');
+  const tipo = params.get('tipo');
+
+  if (nombre) {
+    document.getElementById("nombreInvitado").textContent = `Hola ${decodeURIComponent(nombre)},`;
+  }
+
+  if (tipo) {
+    let tipoTexto = "";
+    switch (tipo.toLowerCase()) {
+      case 'individual':
+        tipoTexto = "Tienes 1 pase individual.";
+        break;
+      case 'doble':
+        tipoTexto = "Tienes un pase doble.";
+        break;
+      case 'familiar':
+        tipoTexto = "Tienes un pase familiar.";
+        break;
+      default:
+        tipoTexto = "Tu tipo de pase no fue especificado.";
+    }
+    document.getElementById("tipoPase").textContent = tipoTexto;
+  }
+</script>
 
   <!-- AOS JS -->
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>

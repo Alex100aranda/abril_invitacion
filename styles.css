@@ -87,7 +87,7 @@
   .fecha-imagen {
     width: 100%;
     height: 100vh;
-    background: url('img/abril.jpeg') center center no-repeat;
+    background: url('img/abril1.jpeg') center center no-repeat;
     background-size: cover;
     background-position: center;
     background-color: #fff;
@@ -163,4 +163,351 @@
       width: 60%;
     }
   }
+
+
+  /* Agradecimientos */
+  .agradecimiento-section {
+    background-color: #fff;
+    padding: 3rem 1rem;
+    text-align: center;
+  }
+  
+  .agradecimiento-contenido {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  .agradecimiento-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .agradecimiento-texto {
+    flex: 1;
+    text-align: left;
+  }
+  
+  .agradecimiento-texto h4 {
+    color: var(--primary-color);
+    margin-top: 1rem;
+    font-weight: bold;
+  }
+  
+  .agradecimiento-texto p {
+    font-size: 1rem;
+    margin: 0.4rem 0;
+  }
+  
+  .agradecimiento-img {
+    flex: 1;
+    max-width: 350px;
+  }
+  
+  .agradecimiento-img img {
+    width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .agradecimiento-card {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .agradecimiento-texto {
+      text-align: center;
+    }
+  
+    .agradecimiento-img {
+      max-width: 100%;
+    }
+  }
+  
+
+
+  /* Ceremonia */
+  .ceremonia-section {
+    padding: 3rem 1rem;
+    background-color: #fff;
+    text-align: center;
+  }
+  
+  .ceremonia-contenido {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  
+  .titulo-seccion {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    font-family: 'Great Vibes', cursive;
+  }
+  
+  .ceremonia-lugar {
+   
+    font-size: 1.2rem;
+  }
+  
+  .ceremonia-hora,
+  .ceremonia-direccion {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+  }
+  
+  .btn-mapa {
+    display: inline-block;
+    margin-top: 1rem;
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 0.6rem 1.2rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-mapa:hover {
+    background-color: #9bcddd;
+  }
+  
+  /* Vestimenta */
+  .vestimenta-section {
+    background-color: #fdfdfd;
+    padding: 3rem 1rem;
+    text-align: center;
+  }
+  
+  .vestimenta-contenido {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  
+  .vestimenta-imagen {
+    margin: 2rem 0;
+  }
+  
+  .vestimenta-imagen-central {
+    width: 150px;  /* Tamaño adecuado de la imagen */
+    height: auto;
+    margin-bottom: 1rem;
+  }
+  
+  .vestimenta-texto {
+    font-size: 1rem;
+    color: var(--text-color);
+    margin-top: 1rem;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .vestimenta-imagen-central {
+      width: 120px;  /* Reduzco el tamaño de la imagen en pantallas pequeñas */
+    }
+  }
+  
+  
+
+  
+  /* Regalos */
+  .regalos-section {
+    background-color: #f9f9f9;
+    padding: 3rem 1rem;
+    text-align: center;
+  }
+  
+  .regalos-contenido {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .regalos-icono i {
+    font-size: 3rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+  }
+  
+  .regalos-texto {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    color: var(--text-color);
+  }
+  
+  .btn-regalo {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 0.7rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-regalo:hover {
+    background-color: #9bcddd;
+  }
+
+  @media (max-width: 768px) {
+    .regalos-icono i {
+      font-size: 2.5rem;
+    }
+  
+    .regalos-texto {
+      font-size: 0.95rem;
+      padding: 0 1rem;
+    }
+  
+    .btn-regalo {
+      width: 100%;
+      font-size: 1rem;
+      padding: 0.8rem;
+    }
+  }
+
+
+  
+/* Imagen centrada */
+#imagen-centrada {
+  margin-bottom: 5px; /* Reducir el margen inferior de la imagen */
+  padding: 0;  /* Eliminar cualquier padding innecesario */
+}
+
+#imagen-centrada img {
+  width: 100%; /* Asegura que la imagen ocupe todo el ancho disponible dentro de la sección */
+  height: auto; /* Mantiene la proporción de la imagen */
+  max-height: 400px; /* Limitar la altura máxima de la imagen para evitar que ocupe mucho espacio */
+  display: block;
+  margin: 0 auto; /* Centra la imagen */
+}
+  
+
+/* Pases */
+.pase-personalizado-section {
+  background-color: #fefefe;
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.pase-contenido {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.pase-nombre {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.pase-tipo {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.pase-nota {
+  font-size: 0.95rem;
+  color: #777;
+  margin-top: 1rem;
+}
+
+
+
+/* Asistencia */
+.confirmacion-asistencia-section {
+  background-color: #fdfdfd;
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.confirmacion-contenido {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.titulo-seccion {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.confirmacion-texto {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+.confirmacion-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.form-group label {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #333;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  color: #333;
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+.btn-confirmar {
+  padding: 1rem;
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-confirmar:hover {
+  background-color: #a1c8e6;
+}
+
+/* Oculta el formulario al inicio */
+.oculto {
+  display: none;
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .confirmacion-contenido {
+    padding: 0 1rem;
+  }
+
+  .btn-confirmar {
+    padding: 1rem 0;
+    font-size: 1.2rem;
+  }
+}
+
+  
   
