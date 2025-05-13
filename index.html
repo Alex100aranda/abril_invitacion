@@ -22,11 +22,27 @@
 <body>
 
   <section class="audio-section">
-    <audio autoplay loop>
-      <source src="music/vals.mp3" type="audio/mpeg">
-      Tu navegador no soporta el elemento de audio.
-    </audio>
-  </section>
+  <audio id="audio" loop>
+    <source src="music/vals.mp3" type="audio/mpeg">
+    Tu navegador no soporta el elemento de audio.
+  </audio>
+</section>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const audio = document.getElementById('audio');
+
+    function iniciarAudio() {
+      audio.play().catch(e => console.log(e));
+      document.removeEventListener('click', iniciarAudio);
+      document.removeEventListener('touchstart', iniciarAudio);
+    }
+
+    document.addEventListener('click', iniciarAudio);
+    document.addEventListener('touchstart', iniciarAudio);
+  });
+</script>
+
   
 
   <!-- Banner Sección -->
@@ -232,7 +248,7 @@
 
   <!-- Imagen 1: Abarca toda la pantalla -->
   <img src="img/imagen1.webp" alt="Imagen de Agradecimiento 2" class="agradecimiento-final-imagen">
-  
+
 <script>
   // Mostrar el formulario al hacer clic en el botón
   document.getElementById('mostrarFormulario').addEventListener('click', function () {
