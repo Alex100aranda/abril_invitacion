@@ -1,5 +1,5 @@
 :root {
-    --primary-color: #b4dfee; /* Azul cielo */
+    --primary-color: #92bbca; /* Azul cielo */
     --text-color: #000000;
     --font-script: 'Dancing Script', cursive;
     --font-body: 'Roboto', sans-serif;
@@ -47,7 +47,7 @@
   }
   
   .intro-text h2 {
-    font-family: 'Roboto', sans-serif;;
+    font-family: 'Roboto', sans-serif;
     color: var(--primary-color);
     font-size: 2rem;
     margin-top: var(--spacing-medium);
@@ -55,11 +55,17 @@
   }
   
   .intro-text h1 {
-    color: var(--primary-color);
+    color: #d4dee7;
     font-family: var(--font-script);
     font-size: 5rem;
     margin-top: var(--spacing-small);
+    text-shadow:
+      -1px -1px 0 navy,
+      1px -1px 0 navy,
+      -1px 1px 0 navy,
+      1px 1px 0 navy; /* contorno simulado */
   }
+  
   
   /* Responsive */
   @media (max-width: 768px) {
@@ -67,10 +73,19 @@
       height: 100vh;
     }
   
-    .intro-text h1 {
-      font-size: 4rem;
-      font-family: "Charmonman", cursive;;
+    @media (max-width: 768px) {
+      .intro-text h1 {
+        font-size: 6rem; /* Aumentado de 4rem a 5rem */
+        font-family: "Charmonman", cursive;
+        -webkit-text-stroke: 1px navy;
+        text-shadow:
+          -1px -1px 0 navy,
+          1px -1px 0 navy,
+          -1px 1px 0 navy,
+          1px 1px 0 navy;
+      }
     }
+    
   
     .intro-text h2 {
       font-size: 1.6rem;
@@ -85,19 +100,19 @@
  /* Sección general */
 .fecha-section {
     text-align: center;
-    background-color: #f9f9f9;;
+    background-color: rgb(252, 249, 249);
     margin-bottom: 0px;
   }
   
-  /* Imagen que abarca toda la pantalla */
   .fecha-imagen {
     width: 100%;
     height: 100vh;
     background: url('img/abril1.jpeg') center center no-repeat;
     background-size: cover;
     background-position: center;
-    background-color: #fff;
+    background-color: #e0f2f8; /* nuevo color de fondo */
   }
+  
   
   /* Texto horizontal de la fecha */
   .fecha-horizontal {
@@ -141,12 +156,20 @@
     font-weight: bold;
     line-height: 1;
   }
+
+  .numero {
+    color: var(--primary-color); /* o el color que uses */
+    font-size: 4rem; /* ajusta según tu diseño */
+    -webkit-text-stroke: 1px navy; /* contorno azul marino */
+  }
+  
   
   /* Responsive */
   @media (max-width: 768px) {
     .fecha-imagen {
       height: 60vh;
       background-size: cover;
+      background-color:skyblue;
     }
   
     .fecha-horizontal {
@@ -227,7 +250,7 @@
   
     .agradecimiento-texto {
       text-align: center;
-      font-size: 1.2rem;
+      font-size: 1.4rem;
     
     }
   
@@ -251,16 +274,26 @@
   }
 
   
-  .titulo-seccion {
-    font-size: 2rem;
-    color: var(--primary-color);
-    margin-bottom: 1rem;
-    font-family: 'Great Vibes', cursive;
-  }
+/* Estilo por defecto */
+.titulo-seccion {
+  font-size: 2rem; /* Tamaño por defecto */
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+  font-family: 'Great Vibes', cursive;
   
+}
+
+/* Estilo en móviles */
+@media (max-width: 768px) {
+  .titulo-seccion {
+    font-size: 3rem !important; /* fuerza el cambio */
+  }
+}
+
+
   .ceremonia-lugar {
    
-    font-size: 1.2rem;
+    font-size: 1.4rem;
   }
   
   .ceremonia-hora,
@@ -273,17 +306,19 @@
     display: inline-block;
     margin-top: 1rem;
     background-color: var(--primary-color);
-    color: #fff;
+    color: navy;
     padding: 0.6rem 1.2rem;
     border-radius: 5px;
     text-decoration: none;
     font-weight: bold;
     transition: background-color 0.3s ease;
+    
   }
   
   .btn-mapa:hover {
     background-color: #9bcddd;
   }
+    
   
   /* Vestimenta */
   .vestimenta-section {
@@ -348,7 +383,7 @@
   .btn-regalo {
     display: inline-block;
     background-color: var(--primary-color);
-    color: white;
+    color: navy;
     padding: 0.7rem 1.5rem;
     border-radius: 5px;
     text-decoration: none;
@@ -453,7 +488,7 @@
 .btn-confirmar {
   display: inline-block;
   background-color: var(--primary-color);
-  color: white;
+  color: navy;
   padding: 0.7rem 1.5rem;
   border-radius: 5px;
   text-decoration: none;
