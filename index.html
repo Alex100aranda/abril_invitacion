@@ -21,29 +21,10 @@
 </head>
 <body>
 
-  <section class="audio-section">
-  <audio id="audio" loop>
-    <source src="music/vals.mp3" type="audio/mpeg">
-    Tu navegador no soporta el elemento de audio.
-  </audio>
-</section>
+ <audio autoplay loop>
+  <source src="music/vals.mp3" type="audio/mpeg">
+</audio>
 
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-    const audio = document.getElementById('audio');
-
-    function iniciarAudio() {
-      audio.play().catch(e => console.log(e));
-      document.removeEventListener('click', iniciarAudio);
-      document.removeEventListener('touchstart', iniciarAudio);
-    }
-
-    document.addEventListener('click', iniciarAudio);
-    document.addEventListener('touchstart', iniciarAudio);
-  });
-</script>
-
-  
 
   <!-- Banner Sección -->
   <section class="banner" id="inicio" data-aos="fade-in"></section>
