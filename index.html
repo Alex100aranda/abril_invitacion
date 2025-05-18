@@ -21,9 +21,14 @@
 </head>
 <body>
 
- <audio autoplay loop>
+<br>
+
+<audio class="audio-centrado" controls loop>
   <source src="music/vals.mp3" type="audio/mpeg">
+  Tu navegador no soporta el elemento de audio.
 </audio>
+
+<br>
 
 
   <!-- Banner Sección -->
@@ -100,7 +105,7 @@
         Parroquia del Señor del Campo Florido
       </p>
       <p class="ceremonia-hora" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="300">
-        Hora: 4:45 pm
+        Hora: 16:45 pm
       </p>
       <br>
       <p class="ceremonia-direccion" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="400">
@@ -129,7 +134,7 @@
     <div class="ceremonia-contenido">
       <h2 class="titulo-seccion">Recepción</h2>
       <p class="ceremonia-lugar">Salón Villa María</p>
-      <p class="ceremonia-hora">Hora: 6:30 pm</p>
+      <p class="ceremonia-hora">Hora: 18:30 pm</p>
       <br>
       <p class="ceremonia-direccion">
         Dirección: Nubia #180, Col. El Recreo, Azcapotzalco, CDMX.
@@ -184,7 +189,7 @@
 <section class="confirmacion-asistencia-section" data-aos="fade-up">
   <div class="container confirmacion-contenido">
     <h2 class="titulo-seccion">Confirmar Asistencia</h2>
-    <p class="confirmacion-texto">Por favor, confirma tu asistencia antes del <strong>15 de Junio</strong>, para hacer que este momento sea aún más especial.</p>
+    <p class="confirmacion-texto">Por favor, confirma tu asistencia para hacer que este momento sea aún más especial.</p>
 
 
     <!-- Botón para mostrar formulario -->
@@ -218,6 +223,31 @@
 </section>
 
 
+<!-- Sección de cuenta regresiva -->
+<section class="countdown-section" data-aos="fade-up">
+  <h2 class="countdown-title">Faltan</h2>
+  <div class="countdown-container">
+    <div class="countdown-box">
+      <span id="days" class="countdown-number">00</span>
+      <span class="countdown-label">Días</span>
+    </div>
+    <div class="countdown-box">
+      <span id="hours" class="countdown-number">00</span>
+      <span class="countdown-label">Horas</span>
+    </div>
+    <div class="countdown-box">
+      <span id="minutes" class="countdown-number">00</span>
+      <span class="countdown-label">Minutos</span>
+    </div>
+    <div class="countdown-box">
+      <span id="seconds" class="countdown-number">00</span>
+      <span class="countdown-label">Segundos</span>
+    </div>
+  </div>
+</section>
+
+
+
 <!-- Sección de Agradecimiento Final -->
 <section class="agradecimiento-final-section" data-aos="fade-down">
   <div class="container agradecimiento-final-contenido">
@@ -229,6 +259,33 @@
 
   <!-- Imagen 1: Abarca toda la pantalla -->
   <img src="img/imagen1.webp" alt="Imagen de Agradecimiento 2" class="agradecimiento-final-imagen">
+
+
+ <!-- Contador -->
+<script>
+  const countdown = () => {
+    const eventDate = new Date("July 5, 2025 00:00:00").getTime();
+    const now = new Date().getTime();
+    const timeLeft = eventDate - now;
+
+    if (timeLeft > 0) {
+      const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+
+      document.getElementById("days").textContent = String(days).padStart(2, '0');
+      document.getElementById("hours").textContent = String(hours).padStart(2, '0');
+      document.getElementById("minutes").textContent = String(minutes).padStart(2, '0');
+      document.getElementById("seconds").textContent = String(seconds).padStart(2, '0');
+    }
+  };
+
+  countdown();
+  setInterval(countdown, 1000);
+</script>
+
+
 
 <script>
   // Mostrar el formulario al hacer clic en el botón
@@ -261,8 +318,6 @@
   </script>
   <script src="script.js"></script>
 
-
-  
 
 </body>
 </html>

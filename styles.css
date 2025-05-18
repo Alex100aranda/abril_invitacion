@@ -582,6 +582,74 @@
   }
 }
 
+.audio-centrado {
+  display: block;
+  margin: 0 auto;
+}
+
+
+/* Faltan */
+.countdown-section {
+  text-align: center;
+  padding: 2rem 1rem;
+  background-color: #f8f9fa;
+}
+
+.countdown-title {
+  font-family: var(--font-script);
+  font-size: 3rem;
+  color: var(--primary-color);
+  margin-bottom: 1.5rem;
+}
+
+.countdown-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.countdown-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.countdown-number {
+  font-size: 4rem;
+  font-weight: bold;
+  color: var(--primary-color);
+  font-family: var(--font-body);
+  -webkit-text-stroke: 1px navy;
+}
+
+.countdown-label {
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+  font-family: var(--font-body);
+  color: var(--text-color);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .countdown-title {
+    font-size: 2.5rem;
+  }
+
+  .countdown-number {
+    font-size: 3rem;
+  }
+
+  .countdown-label {
+    font-size: 1rem;
+  }
+
+  .countdown-container {
+    gap: 1rem;
+  }
+}
+
+
 
     
     
