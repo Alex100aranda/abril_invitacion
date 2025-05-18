@@ -97,6 +97,38 @@
   }
 
 
+ /* Control del audio */
+.audio-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  margin: 2rem auto;
+  background-color: #f9fcfd; /* fondo suave */
+  border: 2px solid #b3d6e4; /* azul cielo claro */
+  border-radius: 20px;
+  width: fit-content;
+  box-shadow: 0 4px 12px rgba(146, 187, 202, 0.3);
+}
+
+.audio-centrado {
+  outline: none;
+  border-radius: 8px;
+  filter: hue-rotate(10deg) brightness(1.1); /* ligera mejora visual */
+}
+
+@media (max-width: 768px) {
+  .audio-wrapper {
+    padding: 0.5rem;
+    border-radius: 15px;
+  }
+
+  .audio-centrado {
+    width: 90vw;
+    max-width: 300px;
+  }
+}
+
  /* Sección general */
 .fecha-section {
     text-align: center;
@@ -582,11 +614,6 @@
   }
 }
 
-.audio-centrado {
-  display: block;
-  margin: 0 auto;
-}
-
 
 /* Faltan */
 .countdown-section {
@@ -618,14 +645,19 @@
 .countdown-number {
   font-size: 4rem;
   font-weight: bold;
-  color: var(--primary-color);
   font-family: var(--font-body);
-  -webkit-text-stroke: 1px navy;
-  border: 2px solid var(--primary-color);
-  border-radius: 12px;
-  padding: 0.5rem 1rem;
+  color: var(--primary-color);
   background-color: #ffffff;
-  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 1rem 1.5rem;
+  border: 3px solid #b3d6e4; /* azul cielo más claro */
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(146, 187, 202, 0.3); /* sombra suave azul celeste */
+  -webkit-text-stroke: 1px navy;
+  transition: transform 0.3s ease;
+}
+
+.countdown-number:hover {
+  transform: scale(1.05);
 }
 
 .countdown-label {
@@ -633,8 +665,8 @@
   font-size: 1.2rem;
   font-family: var(--font-body);
   color: var(--text-color);
+  letter-spacing: 1px;
 }
-
 
 /* Responsive */
 @media (max-width: 768px) {
@@ -643,16 +675,26 @@
     font-size: 2.5rem;
   }
 
+  .countdown-container {
+    gap: 0.5rem;
+    justify-content: space-between;
+    padding: 0 1rem;
+  }
+
+  .countdown-box {
+    flex: 1;
+    min-width: 60px; /* asegura que quepan bien */
+  }
+
   .countdown-number {
-    font-size: 2.5rem;
+    font-size: 2rem;
+    padding: 0.5rem 0.7rem;
+    border-radius: 12px;
   }
 
   .countdown-label {
     font-size: 0.8rem;
-  }
-
-  .countdown-container {
-    gap: 0.7rem;
+    margin-top: 0.3rem;
   }
 }
 
