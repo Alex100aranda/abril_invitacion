@@ -621,6 +621,11 @@
   color: var(--primary-color);
   font-family: var(--font-body);
   -webkit-text-stroke: 1px navy;
+  border: 2px solid var(--primary-color);
+  border-radius: 12px;
+  padding: 0.5rem 1rem;
+  background-color: #ffffff;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .countdown-label {
@@ -629,6 +634,7 @@
   font-family: var(--font-body);
   color: var(--text-color);
 }
+
 
 /* Responsive */
 @media (max-width: 768px) {
