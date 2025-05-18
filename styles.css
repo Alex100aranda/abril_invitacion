@@ -104,18 +104,21 @@
   align-items: center;
   padding: 1rem;
   margin: 2rem auto;
-  background-color: #f9fcfd; /* fondo suave */
-  border: 2px solid #b3d6e4; /* azul cielo claro */
+  background-color: #f9fcfd;
+  border: 2px solid #b3d6e4;
   border-radius: 20px;
-  width: fit-content;
+  width: 80%;               /* antes era "fit-content" */
+  max-width: 200px;         /* nuevo límite más angosto */
   box-shadow: 0 4px 12px rgba(146, 187, 202, 0.3);
 }
 
 .audio-centrado {
+  width: 100%;              /* hace que se ajuste al contenedor */
   outline: none;
   border-radius: 8px;
-  filter: hue-rotate(10deg) brightness(1.1); /* ligera mejora visual */
+  filter: hue-rotate(10deg) brightness(1.1);
 }
+
 
 @media (max-width: 768px) {
   .audio-wrapper {
