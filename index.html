@@ -22,12 +22,17 @@
 <body>
 
 <br>
-<div class="audio-wrapper">
-  <audio class="audio-centrado" controls loop>
+<div class="audio-wrapper custom-player">
+  <button id="play-btn" class="play-button">
+    <i class="fas fa-play"></i>
+  </button>
+  <span class="audio-label">Vals La Cenicienta</span>
+  <audio id="custom-audio" loop>
     <source src="music/vals.mp3" type="audio/mpeg">
     Tu navegador no soporta el elemento de audio.
   </audio>
 </div>
+
 
   <!-- Banner Sección -->
   <section class="banner" id="inicio" data-aos="fade-in"></section>
@@ -257,6 +262,25 @@
 
   <!-- Imagen 1: Abarca toda la pantalla -->
   <img src="img/imagen1.webp" alt="Imagen de Agradecimiento 2" class="agradecimiento-final-imagen">
+
+
+ <!-- Controlador de audio -->
+<script>
+  const audio = document.getElementById('custom-audio');
+  const playBtn = document.getElementById('play-btn');
+  let isPlaying = false;
+
+  playBtn.addEventListener('click', () => {
+    if (isPlaying) {
+      audio.pause();
+      playBtn.innerHTML = '<i class="fas fa-play"></i>';
+    } else {
+      audio.play();
+      playBtn.innerHTML = '<i class="fas fa-pause"></i>';
+    }
+    isPlaying = !isPlaying;
+  });
+</script>
 
 
  <!-- Contador -->

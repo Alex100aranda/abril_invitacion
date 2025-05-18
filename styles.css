@@ -98,39 +98,62 @@
 
 
  /* Control del audio */
-.audio-wrapper {
+.custom-player {
   display: flex;
-  justify-content: center;
   align-items: center;
-  padding: 1rem;
+  gap: 0.8rem;
+  padding: 0.7rem 1rem;
   margin: 2rem auto;
   background-color: #f9fcfd;
   border: 2px solid #b3d6e4;
-  border-radius: 20px;
-  width: 80%;               /* antes era "fit-content" */
-  max-width: 200px;         /* nuevo límite más angosto */
+  border-radius: 16px;
   box-shadow: 0 4px 12px rgba(146, 187, 202, 0.3);
+  max-width: 220px; /* más corto que antes */
 }
 
-.audio-centrado {
-  width: 100%;              /* hace que se ajuste al contenedor */
-  outline: none;
-  border-radius: 8px;
-  filter: hue-rotate(10deg) brightness(1.1);
+.play-button {
+  background-color: #b3d6e4;
+  border: none;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  font-size: 1rem;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  transition: background-color 0.3s ease;
 }
 
+.audio-label {
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  color: var(--primary-color);
+  white-space: nowrap;
+}
 
+/* Responsive */
 @media (max-width: 768px) {
-  .audio-wrapper {
-    padding: 0.5rem;
-    border-radius: 15px;
+  .custom-player {
+    gap: 0.5rem;
+    padding: 0.5rem 0.7rem;
+    max-width: 60%;
   }
 
-  .audio-centrado {
-    width: 90vw;
-    max-width: 300px;
+  .play-button {
+    width: 32px;
+    height: 32px;
+    font-size: 0.9rem;
+  }
+
+  .audio-label {
+    font-size: 0.85rem;
   }
 }
+
+
 
  /* Sección general */
 .fecha-section {
