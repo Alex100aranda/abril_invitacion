@@ -72,6 +72,7 @@
   @media (max-width: 768px) {
     .banner {
       height: 100vh;
+      margin: 0.5rem;
     }
   
     @media (max-width: 768px) {
