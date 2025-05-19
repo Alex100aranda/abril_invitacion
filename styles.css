@@ -108,7 +108,7 @@
   border: 1.5px solid #b3d6e4;
   border-radius: 12px;
   box-shadow: 0 2px 6px rgba(146, 187, 202, 0.25);
-  max-width: 180px;
+  max-width: 220px;
   height: 42px; /* hace que sea más delgado */
 }
 
@@ -145,7 +145,7 @@
   .custom-player {
     gap: 0.4rem;
     padding: 0.3rem 0.5rem;
-    max-width: 160px;
+    max-width: 220px;
     height: 38px;
   }
 
