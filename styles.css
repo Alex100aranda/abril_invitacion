@@ -72,7 +72,7 @@
   @media (max-width: 768px) {
     .banner {
       height: 100vh;
-      margin: 0;
+      margin: 0.5rem;
     }
   
     @media (max-width: 768px) {
@@ -151,7 +151,7 @@
     padding: 0.3rem 0.5rem;
     max-width: 220px;
     height: 38px;
-    margin: 0;
+     margin: 0.3rem auto;
   }
 
   .play-button {
